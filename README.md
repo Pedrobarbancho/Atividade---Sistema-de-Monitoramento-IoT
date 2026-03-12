@@ -8,7 +8,7 @@ O banco de dados possui cinco tabelas principais:
 - **locais**: armazena os ambientes onde os dispositivos estão instalados.
 - **equipamentos**: guarda os dispositivos IoT e seu local de instalação.
 - **sensores**: contém os sensores vinculados a cada equipamento.
-- **medicoes**: registra as leituras feitas pelos sensores.
+- **medições**: registra as leituras feitas pelos sensores.
 - **alertas**: armazena notificações geradas quando valores ultrapassam limites pré-definidos.
 
 As tabelas estão relacionadas por meio de chaves estrangeiras que garantem integridade referencial.
