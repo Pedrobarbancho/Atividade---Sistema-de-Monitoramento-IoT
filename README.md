@@ -1,10 +1,10 @@
-# Sistema de Monitoramento IoT
+# 🌐 Sistema de Monitoramento IoT
 
-## Resumo
+## 📝 Resumo
 Este projeto implementa um sistema de monitoramento de dispositivos IoT distribuídos em diferentes locais. Sensores instalados nos equipamentos coletam dados ambientais como temperatura, umidade, pressão e luminosidade. Os dados são armazenados em um banco MySQL, e uma aplicação Python permite consultar os alertas registrados no banco.
 
-## Banco de Dados
-O banco de dados possui cinco tabelas principais:
+## 🗄️ Arquitetura Banco de Dados
+O `bancoDB` possui cinco tabelas principais:
 - **locais**: armazena os ambientes onde os dispositivos estão instalados.
 - **equipamentos**: guarda os dispositivos IoT e seu local de instalação.
 - **sensores**: contém os sensores vinculados a cada equipamento.
@@ -13,12 +13,13 @@ O banco de dados possui cinco tabelas principais:
 
 As tabelas estão relacionadas por meio de chaves estrangeiras que garantem integridade referencial.
 
-## Como criar o banco no MySQL Workbench
+## 🚀 Como criar o banco no MySQL Workbench
 1. Abra o MySQL Workbench e conecte no servidor local.  
 2. Crie o banco de dados com:
-   ```sql
-   CREATE DATABASE bancoDB;
-   USE bancoDB;
+```sql
+CREATE DATABASE bancoDB;
+USE bancoDB;
+```
 3. Copie e execute todo o script de criação das tabelas (CREATE TABLE) na ordem:
 - locais
 - equipamentos
@@ -33,11 +34,11 @@ As tabelas estão relacionadas por meio de chaves estrangeiras que garantem inte
 - alertas
 > Seguindo esta ordem você evita erros de foreign key
 
-## Código Python
+## 🐍 Código Python
 O código Python conecta ao banco MySQL e permite:
 - Listar os alertas registrados no banco.
-> Obs: atualmente o código apenas lista alertas. Futuras melhorias podem incluir cadastro de equipamentos, sensores e medições.
-## como usar
+> **Obs:** atualmente o código tem varios arquivo para cada tabela. Futuras melhorias podem incluir cadastro de equipamentos, sensores e medições.
+## 📖 Como usar
 1. Abra o PowerShell (ou terminal) e instale a biblioteca MySQL:
 ```bash
 pip install mysql-connector-python
@@ -51,7 +52,7 @@ python -m pip install --upgrade pip
 ```bash
 python app.py
 ```
-4. O programa exibirá os alertas armazenados no banco de dados.
-## autores
-- pedro arthur b. santos
-- lucas rodrigues sousa
+4. O programa exibirá as tabelas armazenados no banco de dados.
+## 👥 autores
+- [pedro arthur b. santos](https://github.com/Pedrobarbancho)
+- [lucas rodrigues sousa](https://github.com/Lk753)
